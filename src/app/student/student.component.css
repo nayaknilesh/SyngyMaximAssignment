@@ -1,0 +1,100 @@
+
+/* input.ng-valid{
+    border: greenyellow 3px solid;
+} */
+
+
+
+.form-container {
+
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+    border-radius: 10px;
+}
+
+#fl{
+    margin-top: 20px;
+}
+
+.form-lebel{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 3px;
+
+    
+
+}
+
+.form-input{
+    margin: 0px 20px;
+    height: 35px;
+    margin-bottom: 20px;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+
+h2{
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.edu-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+
+#add-button{
+    height: 25px;
+    position: relative;
+    background-color: aqua;
+    width: 5%;
+    float: right;
+     margin-left: 90%;
+     font-weight: 600;
+     border-radius: 5px;
+     
+    
+}
+
+#submit-button{
+    height: 30px;
+    background-color:blueviolet;
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#add-button:hover{
+    background-color: rgb(31, 129, 129);
+    border: none;
+    color: white;
+}
+
+#submit-button:hover{
+    background-color: rgb(92, 40, 141);
+    border: none;
+    color: white;
+}
+
+input.ng-invalid.ng-touched{
+    border: red 3px solid;
+}
+
+p{
+    color: red;
+}
+
+
+
+
+ 

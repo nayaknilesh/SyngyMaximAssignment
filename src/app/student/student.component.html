@@ -1,0 +1,52 @@
+<form class="form-container" [formGroup]="student">
+    <label id="fl" class="form-lebel" >Full Name</label>
+    <input type="text" class="form-input" formControlName="fname" placeholder="FullName">
+    <p *ngIf="student.controls['fname'].dirty && student.hasError('required','fname') ">*Full Name is Required</p>
+
+    <label class="form-lebel">Username:</label>
+    <input type="text" class="form-input" formControlName="username" Placeholder="UserName">
+    <p *ngIf="student.controls['username'].dirty && student.hasError('required','username') ">*User Name is Required</p>
+
+    <label class="form-lebel">Email:</label>
+    <input type="email" class="form-input" formControlName="email" placeholder="Email">
+    <p *ngIf="student.controls['email'].dirty && student.hasError('required','email') ">*Email is Required</p>
+
+    <label class="form-lebel">DOB:</label>
+    <input type="date" class="form-input" formControlName="dob" placeholder="Date of Birth">
+    <p *ngIf="student.controls['dob'].dirty && student.hasError('required','dob') ">*DOB is Required</p>
+
+    <label class="form-lebel">Mobile Number:</label>
+    <input type="text" class="form-input" formControlName="phone" placeholder="Mobile Number">
+    <p *ngIf="student.controls['phone'].dirty && student.hasError('required','phone') ">*Mobile Number is Required</p>
+    <h2>Educational Details</h2>
+    <div formArrayName="studentArray">
+        <div *ngFor="let student of studentQualification.controls; let i=index ">
+            <div class="edu-form" [formGroupName]="i">
+                <label class="form-lebel">CollegeName:</label>
+                <input type="text" class="form-input" formControlName="clg" placeholder="Enter College/School Name">
+                <p *ngIf="(studentQualification.controls[i].get('clg')?.dirty ||studentQualification.controls[i].get('clg')?.touched) && studentQualification.controls[i].get('clg')?.errors  ">*Full Name is Required</p>
+
+                <label class="form-lebel">Degree/School:</label>
+                <input type="text" class="form-input" formControlName="degree" placeholder="Enter Degree/School">
+                <p *ngIf="(studentQualification.controls[i].get('degree')?.dirty ||studentQualification.controls[i].get('degree')?.touched) && studentQualification.controls[i].get('degree')?.errors  ">*Degree/School is Required</p>
+
+                <label class="form-lebel">Percentage/Mark</label>
+                <input type="text" class="form-input" formControlName="mark" placeholder="Enter Perrcentage/Mark">
+                <p *ngIf="(studentQualification.controls[i].get('mark')?.dirty ||studentQualification.controls[i].get('mark')?.touched) && studentQualification.controls[i].get('mark')?.errors  ">*Percentage/Mark is Required</p>
+
+                <label class="form-lebel">From</label>
+                <input type="date" class="form-input" formControlName="from" placeholder="Enter Startdate">
+                <p *ngIf="(studentQualification.controls[i].get('from')?.dirty ||studentQualification.controls[i].get('from')?.touched) && studentQualification.controls[i].get('from')?.errors  ">*Startdate is Required</p>
+
+                <label class="form-lebel">To</label>
+                <input type="date" class="form-input" formControlName="to" placeholder="Enter Enddate">
+                <p *ngIf="(studentQualification.controls[i].get('to')?.dirty ||studentQualification.controls[i].get('to')?.touched) && studentQualification.controls[i].get('to')?.errors  ">*Enddate is Required</p>
+
+            </div>
+        </div>
+    </div>
+    <button id="add-button" type="button" (click)="addRow()">Add</button>
+
+
+    <input id="submit-button" type="submit" (click)="dataSave()" value="Submit">
+</form>

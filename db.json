@@ -1,0 +1,116 @@
+{
+  "studentData": [
+    {
+      "fname": "Nilesh Nayak",
+      "user": "Nilesh1234",
+      "email": "nileshnayak@gmail.com",
+      "dob": "2022-11-03",
+      "phone": 7533698741,
+      "studentArray": [
+        {
+          "clg": "Gitam",
+          "degree": "B-tech",
+          "mark": "83",
+          "from": "2022-11-06",
+          "to": "2022-12-10"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "fname": "Nilesh Nayak",
+      "user": "Nilesh1234",
+      "email": "jayaprakash.jena@infosys.com",
+      "dob": "1998-05-25",
+      "phone": "7536988767",
+      "studentArray": [
+        {
+          "clg": "Gita",
+          "degree": "B-tech",
+          "mark": "78.23",
+          "from": "2019-03-20",
+          "to": "2022-06-23"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "fname": "Nilesh Nayak",
+      "user": "Nilesh1334",
+      "email": "nileshnayak9348@gmail.com",
+      "dob": "1998-05-23",
+      "phone": "7536988767",
+      "studentArray": [
+        {
+          "clg": "gita",
+          "degree": "btech",
+          "mark": "78",
+          "from": "2015-05-23",
+          "to": "2019-05-23"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "fname": "",
+      "user": "",
+      "email": "",
+      "dob": "",
+      "phone": "",
+      "studentArray": [
+        {
+          "clg": "",
+          "degree": "",
+          "mark": "",
+          "from": "",
+          "to": ""
+        }
+      ],
+      "id": 4
+    },
+    {
+      "fname": "",
+      "user": "",
+      "email": "",
+      "dob": "",
+      "phone": "",
+      "studentArray": [
+        {
+          "clg": "",
+          "degree": "",
+          "mark": "",
+          "from": "",
+          "to": ""
+        }
+      ],
+      "id": 5
+    },
+    {
+      "fname": "",
+      "user": "",
+      "email": "",
+      "dob": "",
+      "phone": "",
+      "studentArray": [
+        {
+          "clg": "",
+          "degree": "",
+          "mark": "",
+          "from": "",
+          "to": ""
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
